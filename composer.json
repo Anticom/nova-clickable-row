@@ -1,0 +1,37 @@
+{
+    "name": "ibilcu/nova-clickable-row",
+    "description": "A Laravel Nova clickable row.",
+    "keywords": [
+        "laravel",
+        "nova",
+		"clickable row"
+    ],
+	"authors": [
+		{
+			"name": "Iulian Bilcu",
+			"email": "me@iulianbilcu.com",
+			"role": "Developer"
+		}
+	],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IBilcu\\NovaClickableRow\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IBilcu\\NovaClickableRow\\AssetServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
