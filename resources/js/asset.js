@@ -41,7 +41,7 @@ function afterResourceTableLoadComplete() {
   )
 
   Array.from(actionButtons).forEach(button => {
-    const row = button.parentElement.parentElement.parentElement
+    const row = button.closest('tr')
     row.addEventListener(event, e => {
       if (elementIsExcluded(e)) return
       window.location.href = button.href
